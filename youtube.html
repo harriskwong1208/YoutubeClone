@@ -19,8 +19,8 @@
 
 
             .thumbnail{
-                width: 300px;
-                display: block;
+                width: 100%;
+           
             }
             .search-bar{
               display: block;
@@ -33,17 +33,12 @@
             .video-author{
                 margin-bottom: 4px;
             }
-            .video-preview{
-                width: 300px;
-                display: inline-block;
-                vertical-align: top;
-                margin-right: 15px;
+ 
+            .video-info-grid{
+                display: grid;
+                grid-template-columns: 50px 1fr;
             }
-            .channel-picture{
-                display: inline-block;
-                width: 50px;
-                vertical-align: top;
-            }
+     
             .video-title{
                 margin-top: 0px;
                 font-size: 14px;
@@ -51,10 +46,7 @@
                 line-height: 20px;
                 margin-bottom: 12px;
             }
-            .video-info{
-                display: inline-block;
-                width: 200px;
-            }
+  
             .profile-picture{
                 width: 40px;
                 border-radius: 50px;
@@ -62,53 +54,157 @@
             .thumbnail-row{
                 margin-bottom: 12px;
             }
+            .video-grid{
+                display: grid;
+                grid-template-columns:1fr 1fr 1fr ;
+                column-gap: 16px;
+                row-gap: 40px;
+            }
         </style>    
     </head>
     <body>
         <input class="search-bar" type="text" placeholder="Search"> 
-        <div class="video-preview">
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
-            </div>
-            <div>
-                <div class="channel-picture">
-                    <img class="profile-picture" src="channel-pictures/channel-1.jpeg">
+
+        <div class="video-grid">
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
                 </div>
-                <div class="video-info">
-                    <p class="video-title">    
-                        Talking Tech and AI with Google CEO Sundar Pichai!
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="channel-pictures/channel-1.jpeg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">    
+                            Talking Tech and AI with Google CEO Sundar Pichai!
+                            </p>
+                            <p class="video-author">    
+                            Marques Brownlee
+                            </p>
+                            <p class="video-stats">    
+                            3.4M views &#183; 6 months ago
+                        </p>
+                    </div>
+                </div> 
+            </div>
+    
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="thumbnails/channel-2.jpeg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">    
+                            Try Not To Laugh
                         </p>
                         <p class="video-author">    
-                        Marques Brownlee
+                            Markplier
                         </p>
-                        <p class="video-stats">    
-                        3.4M views &#183; 6 months ago
-                    </p>
-                </div>
-            </div> 
-        </div>
-
-        <div class="video-preview">
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+                            <p class="video-stats">    
+                            19M views &#183; 4 years ago
+                        </p>
+                    </div>
+                </div> 
             </div>
-            <div>
-                <div class="channel-picture">
-                    <img class="profile-picture" src="thumbnails/channel-2.jpeg">
+    
+    
+    
+    
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/liverpool.webp">
                 </div>
-                <div class="video-info">
-                    <p class="video-title">    
-                        Try Not To Laugh
-                    </p>
-                    <p class="video-author">    
-                        Markplier
-                    </p>
-                        <p class="video-stats">    
-                        19M views &#183; 4 years ago
-                    </p>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="channel-pictures/nbc.jpg">
+                    </div>
+                    <div class="video-info">
+                            <p class="video-title">    
+                            Liverpool v. Brentford | PREMIER LEAGUE HIGHLIGHTS | 5/6/2023 | NBC Sports
+                            </p>
+                            <p class="video-author">    
+                            NPC sports
+                            </p>
+                            <p class="video-stats">    
+                            205K views &#183; 1 day ago
+                        </p>
+                    </div>
+                </div> 
+            </div>
+    
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
                 </div>
-            </div> 
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="thumbnails/channel-2.jpeg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">    
+                            Try Not To Laugh
+                        </p>
+                        <p class="video-author">    
+                            Markplier
+                        </p>
+                            <p class="video-stats">    
+                            19M views &#183; 4 years ago
+                        </p>
+                    </div>
+                </div> 
+            </div>
+    
+    
+    
+    
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="channel-pictures/channel-1.jpeg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">    
+                            Talking Tech and AI with Google CEO Sundar Pichai!
+                            </p>
+                            <p class="video-author">    
+                            Marques Brownlee
+                            </p>
+                            <p class="video-stats">    
+                            3.4M views &#183; 6 months ago
+                        </p>
+                    </div>
+                </div> 
+            </div>
+    
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="thumbnails/channel-2.jpeg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">    
+                            Try Not To Laugh
+                        </p>
+                        <p class="video-author">    
+                            Markplier
+                        </p>
+                            <p class="video-stats">    
+                            19M views &#183; 4 years ago
+                        </p>
+                    </div>
+                </div> 
+            </div>
         </div>
+        
 
     </body>    
 
